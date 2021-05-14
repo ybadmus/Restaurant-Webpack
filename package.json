@@ -1,0 +1,31 @@
+{
+    "name": "restaurant",
+    "version": "1.0.0",
+    "description": "understanding the benefits of modularized code\u001b[D\u001b[D\u001b[D\u001b[D\u001b[",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "watch": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ybadmus/Restaurant-Page-Webpack.git"
+    },
+    "keywords": [
+        "webpack"
+    ],
+    "author": "ybadmus",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ybadmus/Restaurant-Page-Webpack/issues"
+    },
+    "homepage": "https://github.com/ybadmus/Restaurant-Page-Webpack#readme",
+    "devDependencies": {
+        "css-loader": "^5.2.4",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.37.0",
+        "webpack-cli": "^4.7.0"
+    },
+    "dependencies": {}
+}
