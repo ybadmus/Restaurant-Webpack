@@ -1,7 +1,9 @@
-import './style.css'
+import { footer } from './footer';
+import './style.css';
 
-class index {
-    constructor() {
+function index() {
+    return footer();
+};
 
-    }
-}
+const content = document.querySelector('#content');
+content.appendChild(index());
