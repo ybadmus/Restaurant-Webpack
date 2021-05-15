@@ -1,0 +1,8 @@
+.content {
+    min-height: 100vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
