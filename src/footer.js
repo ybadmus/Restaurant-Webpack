@@ -1,8 +1,7 @@
 const footer = () => {
-    const fa_copyright = ['fas', 'fa-copyright'];
     const copyright_year = ` ${new Date().getFullYear()}`;
 
-    const footer = document.createElement('selector');
+    const footer = document.createElement('footer');
     footer.classList.add('footer');
 
     const ul = document.createElement('ul');

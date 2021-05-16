@@ -4,7 +4,7 @@
 }
 
 .app {
-    min-height: 85vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,20 +14,29 @@
 .footer {
     display: flex;
     justify-content: flex-end;
+    background: #000;
+    color: floralwhite;
 }
 
 .footer ul {
     display: flex;
     flex-direction: row;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .footer li {
-    margin: 0 3px;
     font-weight: 600;
+    padding: 5px;
+    border-right: 1px solid silver;
 }
 
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
+}
+
+.list-group {
+    width: 300px;
+    text-align: center;
 }

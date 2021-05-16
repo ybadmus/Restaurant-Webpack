@@ -6,12 +6,11 @@ import { contact } from './contact';
 import { menu } from './menu';
 import './style.css';
 
-function render() {
+const render = (menu) => {
     const content = document.querySelector('#content');
     content.appendChild(header());
 
     content.appendChild(home());
-    //content.appendChild(about());
 
     content.appendChild(footer());
     return content;
