@@ -5,7 +5,7 @@ const contact = () => {
     app.classList.add(...classes);
 
     const title = document.createElement('h1');
-    title.textContent = 'Contact';
+    title.textContent = 'Contact Us';
 
     app.appendChild(title);
 
