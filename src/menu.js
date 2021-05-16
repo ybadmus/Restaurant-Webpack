@@ -3,7 +3,7 @@ import ghanaJollof from './ghana_jollof.jpg';
 import bankuOkro from './images_Banku_And_Okro_Soup.jpg';
 import ghanaAmpesi from './img_3021ghanas-shito.jpg';
 
-const menu = () => {
+export default function menu() {
   const app = document.createElement('div');
   const classes = ['app', 'container'];
   app.classList.add(...classes);
@@ -16,7 +16,7 @@ const menu = () => {
 
   const menus = [{ name: 'Banku & Okro Stew', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s', image: bankuOkro }, { name: 'Garden egg stew with boiled yam and plantain', description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', image: ghanaAmpesi }, { name: 'Ghana Jollof', description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable', image: ghanaJollof }, { name: 'Waakye', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', image: ghanaWaakye }];
 
-  for (let i = 0; i < menus.length; i++) {
+  for (let i = 0; i < menus.length; i += 1) {
     const row = document.createElement('div');
     row.className = 'row';
 
@@ -33,36 +33,36 @@ const menu = () => {
     const imgWrapper = document.createElement('div');
     imgWrapper.className = 'col-12 col-sm-3';
 
-    const card_img = document.createElement('img');
-    card_img.src = menus[i].image;
-    card_img.alt = 'Card image cap';
+    const cardImg = document.createElement('img');
+    cardImg.src = menus[i].image;
+    cardImg.alt = 'Card image cap';
 
-    imgWrapper.appendChild(card_img);
+    imgWrapper.appendChild(cardImg);
 
-    const card_body = document.createElement('div');
-    card_body.className = 'card-body col-12 col-sm-9';
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body col-12 col-sm-9';
 
-    const card_title = document.createElement('h4');
-    card_title.className = 'card-title';
-    card_title.textContent = menus[i].name;
+    const cardTitle = document.createElement('h4');
+    cardTitle.className = 'card-title';
+    cardTitle.textContent = menus[i].name;
 
-    const card_text = document.createElement('p4');
-    card_text.className = 'card-text';
-    card_text.textContent = menus[i].description;
+    const cardText = document.createElement('p4');
+    cardText.className = 'card-text';
+    cardText.textContent = menus[i].description;
 
-    const btn_div = document.createElement('div');
-    const order_btn = document.createElement('button');
-    order_btn.className = 'btn btn-success btn-md mt-2';
-    order_btn.textContent = 'Order Now';
+    const btnDiv = document.createElement('div');
+    const orderBtn = document.createElement('button');
+    orderBtn.className = 'btn btn-success btn-md mt-2';
+    orderBtn.textContent = 'Order Now';
 
-    btn_div.appendChild(order_btn);
+    btnDiv.appendChild(orderBtn);
 
-    card_body.appendChild(card_title);
-    card_body.appendChild(card_text);
-    card_body.appendChild(btn_div);
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardText);
+    cardBody.appendChild(btnDiv);
 
     cardHorizontal.appendChild(imgWrapper);
-    cardHorizontal.appendChild(card_body);
+    cardHorizontal.appendChild(cardBody);
 
     card.appendChild(cardHorizontal);
     col12.appendChild(card);
@@ -71,6 +71,4 @@ const menu = () => {
   }
 
   return app;
-};
-
-export { menu };
+}
