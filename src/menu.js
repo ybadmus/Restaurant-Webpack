@@ -1,3 +1,8 @@
+import ghana_wakkye from './Ghana_Waakye.jpg';
+import ghana_jollof from './ghana_jollof.jpg';
+import banku_okro from './images_Banku_And_Okro_Soup.jpg';
+import ghana_ampesi from './img_3021ghanas-shito.jpg';
+
 const menu = () => {
     const app = document.createElement('div');
     const classes = ['app', 'container'];
@@ -9,7 +14,7 @@ const menu = () => {
 
     app.appendChild(title);
 
-    const menus = [{ name: 'Banku & Okro Stew', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s', image: 'https://www.primenewsghana.com/images/2018/mar/12/images_Banku_And_Okro_Soup_277506581.jpg' }, { name: 'Garden egg stew with boiled yam and plantain', description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', image: 'http://mywekutastes.com/wp-content/uploads/2015/09/img_3021ghanas-shito_-e1442951402545.jpg' }, { name: 'Ghana Jollof', description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable', image: 'https://pbs.twimg.com/media/EYY594EUMAE54z_.jpg' }, { name: 'Waakye', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', image: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Ghana%27s_Waakye.jpg' }]
+    const menus = [{ name: 'Banku & Okro Stew', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s', image: banku_okro }, { name: 'Garden egg stew with boiled yam and plantain', description: 'It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.', image: ghana_ampesi }, { name: 'Ghana Jollof', description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable', image: ghana_jollof }, { name: 'Waakye', description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', image: ghana_wakkye }]
 
     for (let i = 0; i < menus.length; i++) {
 
