@@ -6,17 +6,19 @@ const footer = () => {
     footer.classList.add('footer');
 
     const ul = document.createElement('ul');
-    const li = document.createElement('li');
 
-    const i = document.createElement('i');
-    i.classList.add(...fa_copyright);
+    const footer_list = [copyright_year, 'Milkyway Inc'];
 
-    const p = document.createElement('p');
-    p.textContent = copyright_year;
+    for (let i = 0; i < footer_list.length; i++) {
 
-    li.appendChild(i);
-    li.appendChild(p);
-    ul.appendChild(li);
+        const li = document.createElement('li');
+        const p = document.createElement('p');
+        p.textContent = footer_list[i];
+
+        li.appendChild(p);
+        ul.appendChild(li);
+    }
+
     footer.appendChild(ul);
 
     return footer;

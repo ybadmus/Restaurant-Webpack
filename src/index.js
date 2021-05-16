@@ -10,7 +10,7 @@ function render() {
     const content = document.querySelector('#content');
     content.appendChild(header());
 
-    content.appendChild(menu());
+    content.appendChild(home());
     //content.appendChild(about());
 
     content.appendChild(footer());

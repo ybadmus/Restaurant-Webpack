@@ -11,7 +11,7 @@ const header = () => {
     const anchor = document.createElement('a');
     anchor.classList.add('navbar-brand');
     anchor.attributes.href = '#';
-    anchor.textContent = 'Restaurant';
+    anchor.textContent = 'Villa Escudero';
 
     container_fluid.appendChild(anchor);
 
@@ -32,7 +32,7 @@ const header = () => {
     const navbar_nav = document.createElement('div');
     navbar_nav.classList.add('navbar-nav');
 
-    const links = [{ name: 'Home', href: '#', active: true }, { name: 'Menu', href: '#', active: false }, { name: 'Contact', href: '#', active: false }];
+    const links = [{ name: 'Home', href: '#', active: true }, { name: 'Menu', href: '#', active: false }, { name: 'Contact', href: '#', active: false }, { name: 'About us', href: '#', active: false }];
 
     for (let i = 0; i < links.length; i++) {
 

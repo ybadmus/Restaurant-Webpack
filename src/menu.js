@@ -46,11 +46,8 @@ const menu = () => {
         card_horizontal.appendChild(card_body);
 
         card.appendChild(card_horizontal);
-
         col12.appendChild(card);
-
         row.appendChild(col12);
-
         app.appendChild(row);
     }
 
