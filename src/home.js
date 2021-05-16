@@ -1,7 +1,8 @@
 const home = () => {
 
     const app = document.createElement('div');
-    app.classList.add('app');
+    const classes = ['app', 'container'];
+    app.classList.add(...classes);
 
     const restaurantName = document.createElement('h2');
     restaurantName.className = 'restaurant-name';

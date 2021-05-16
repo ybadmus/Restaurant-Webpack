@@ -1,7 +1,7 @@
   const about = () => {
 
       const app = document.createElement('div');
-      const classes = ['about', 'container'];
+      const classes = ['app', 'container'];
       app.classList.add(...classes);
 
       const title = document.createElement('h1');
