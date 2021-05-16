@@ -5,7 +5,7 @@
       app.classList.add(...classes);
 
       const title = document.createElement('h1');
-      title.textContent = 'About';
+      title.textContent = 'About Us';
 
       app.appendChild(title);
 

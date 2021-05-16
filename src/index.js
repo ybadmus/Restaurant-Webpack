@@ -6,11 +6,14 @@ import { contact } from './contact';
 import { menu } from './menu';
 import './style.css';
 
-const render = (menu) => {
+const render = (menuItem) => {
     const content = document.querySelector('#content');
     content.appendChild(header());
 
-    content.appendChild(home());
+    //content.appendChild(home());
+    content.appendChild(menu());
+    //content.appendChild(contact());
+    //content.appendChild(about());
 
     content.appendChild(footer());
     return content;

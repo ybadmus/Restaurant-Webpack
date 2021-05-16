@@ -36,7 +36,17 @@
     flex: 1 1 auto;
 }
 
+.card-horizontal img {
+    width: 300px;
+}
+
 .list-group {
     width: 300px;
     text-align: center;
+}
+
+.about {
+    margin-top: 2rem;
+    padding: 30px;
+    border: 1px solid silver;
 }

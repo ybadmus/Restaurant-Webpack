@@ -6,6 +6,7 @@ const contact = () => {
 
     const title = document.createElement('h1');
     title.textContent = 'Contact Us';
+    title.className = 'mb-5';
 
     app.appendChild(title);
 
