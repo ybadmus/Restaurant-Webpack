@@ -6,17 +6,39 @@ import { contact } from './contact';
 import { menu } from './menu';
 import './style.css';
 
-const render = (menuItem) => {
+const render = (item) => {
+    document.getElementById("content").innerHTML = "";
     const content = document.querySelector('#content');
     content.appendChild(header());
 
-    //content.appendChild(home());
-    content.appendChild(menu());
-    //content.appendChild(contact());
-    //content.appendChild(about());
+    switch (item) {
+        case 'home':
+            content.appendChild(home());
+            break;
+        case 'menu':
+            content.appendChild(menu());
+            break;
+        case 'about':
+            content.appendChild(about());
+            break;
+        case 'contact':
+            content.appendChild(contact());
+            break;
+        default:
+            content.appendChild(home());
+    };
 
     content.appendChild(footer());
     return content;
 };
 
 render();
+
+document.addEventListener('click', event => {
+
+
+    if (event.target.className == 'nav-link') {
+        render(event.target.id);
+    }
+
+});

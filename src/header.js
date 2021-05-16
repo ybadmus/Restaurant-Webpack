@@ -32,12 +32,13 @@ const header = () => {
     const navbar_nav = document.createElement('div');
     navbar_nav.classList.add('navbar-nav');
 
-    const links = [{ name: 'Home', href: '#', active: true }, { name: 'Menu', href: '#', active: false }, { name: 'Contact', href: '#', active: false }, { name: 'About us', href: '#', active: false }];
+    const links = [{ name: 'Home', href: '#', active: true }, { name: 'Menu', href: '#', active: false }, { name: 'Contact', href: '#', active: false }, { name: 'About', href: '#', active: false }];
 
     for (let i = 0; i < links.length; i++) {
 
         const nav_link = document.createElement('a');
         nav_link.classList.add('nav-link');
+        nav_link.id = links[i].name.toLowerCase();
         if (links[i].active) nav_link.classList.add('active');
         nav_link.attributes.href = links[i].href;
         nav_link.textContent = links[i].name;

@@ -61,3 +61,7 @@
         background-color: #020b1a;
         border-color: #0e1117
     }
+    
+    .nav-link {
+        cursor: pointer;
+    }

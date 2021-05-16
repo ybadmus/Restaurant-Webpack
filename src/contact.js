@@ -4,7 +4,7 @@ const contact = () => {
     const classes = ['app', 'container'];
     app.classList.add(...classes);
 
-    const title = document.createElement('h1');
+    const title = document.createElement('h2');
     title.textContent = 'Contact Us';
     title.className = 'mb-5';
 
@@ -16,7 +16,7 @@ const contact = () => {
     app.appendChild(support);
 
     const email = document.createElement('p');
-    email.textContent = 'E-mail: restauranthouse@example.com';
+    email.textContent = 'E-mail: villaescudero@example.com';
 
     app.appendChild(email);
 
