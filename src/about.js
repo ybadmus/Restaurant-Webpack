@@ -1,33 +1,29 @@
-  const about = () => {
+export default function about() {
+  const app = document.createElement('div');
+  const classes = ['app', 'container'];
+  app.classList.add(...classes);
 
-      const app = document.createElement('div');
-      const classes = ['app', 'container'];
-      app.classList.add(...classes);
+  const title = document.createElement('h1');
+  title.textContent = 'About Us';
 
-      const title = document.createElement('h1');
-      title.textContent = 'About Us';
+  app.appendChild(title);
 
-      app.appendChild(title);
+  const about = document.createElement('div');
+  about.className = 'about';
 
-      const about = document.createElement('div');
-      about.className = 'about';
+  const aboutText = [
+    'We provide our customers with luxurious dining and an overall unforgettable experience',
+    'Steakhouse is currently situated in over 15 cities worldwide',
+    'Book a reservation today',
+  ];
 
-      const aboutText = [
-          'We provide our customers with luxurious dining and an overall unforgettable experience',
-          'Steakhouse is currently situated in over 15 cities worldwide',
-          'Book a reservation today',
-      ];
+  for (let i = 0; i < aboutText.length; i += 1) {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = aboutText[i];
+    about.appendChild(paragraph);
+  }
 
-      for (let i = 0; i < aboutText.length; i++) {
-          const paragraph = document.createElement('p');
-          paragraph.textContent = aboutText[i];
-          about.appendChild(paragraph);
-      };
+  app.appendChild(about);
 
-      app.appendChild(about);
-
-      return app;
-
-  };
-
-  export { about };
+  return app;
+}

@@ -1,56 +1,53 @@
-const header = () => {
-    const navbar_class = ['navbar', 'navbar-expand-lg', 'navbar-dark', 'bg-dark'];
-    const navbar_collapse = ['collapse', 'navbar-collapse']
+export default function header() {
+  const navbarClass = ['navbar', 'navbar-expand-lg', 'navbar-dark', 'bg-dark'];
+  const navbarCollapse = ['collapse', 'navbar-collapse'];
 
-    const nav = document.createElement('nav');
-    nav.classList.add(...navbar_class);
+  const nav = document.createElement('nav');
+  nav.classList.add(...navbarClass);
 
-    const container_fluid = document.createElement('div');
-    container_fluid.classList.add('container-fluid');
+  const containerFluid = document.createElement('div');
+  containerFluid.classList.add('container-fluid');
 
-    const anchor = document.createElement('a');
-    anchor.classList.add('navbar-brand');
-    anchor.attributes.href = '#';
-    anchor.textContent = 'Villa Escudero';
+  const anchor = document.createElement('a');
+  anchor.classList.add('navbar-brand');
+  anchor.attributes.href = '#';
+  anchor.textContent = 'Villa Escudero';
 
-    container_fluid.appendChild(anchor);
+  containerFluid.appendChild(anchor);
 
-    const button = document.createElement('button');
-    button.classList = 'navbar-toggler';
-    button.attributes.type = 'button';
+  const button = document.createElement('button');
+  button.classList = 'navbar-toggler';
+  button.attributes.type = 'button';
 
-    const span = document.createElement('span');
-    span.classList.add('navbar-toggler-icon');
-    button.appendChild(span);
+  const span = document.createElement('span');
+  span.classList.add('navbar-toggler-icon');
+  button.appendChild(span);
 
-    container_fluid.appendChild(button);
+  containerFluid.appendChild(button);
 
-    const collapse = document.createElement('div');
-    collapse.classList.add(...navbar_collapse);
-    collapse.id = 'navbarNavAltMarkup';
+  const collapse = document.createElement('div');
+  collapse.classList.add(...navbarCollapse);
+  collapse.id = 'navbarNavAltMarkup';
 
-    const navbar_nav = document.createElement('div');
-    navbar_nav.classList.add('navbar-nav');
+  const navbarNav = document.createElement('div');
+  navbarNav.classList.add('navbar-nav');
 
-    const links = [{ name: 'Home', href: '#', active: true }, { name: 'Menu', href: '#', active: false }, { name: 'Contact', href: '#', active: false }, { name: 'About', href: '#', active: false }];
+  const links = [{ name: 'Home', href: '#', active: true }, { name: 'Menu', href: '#', active: false }, { name: 'Contact', href: '#', active: false }, { name: 'About', href: '#', active: false }];
 
-    for (let i = 0; i < links.length; i++) {
+  for (let i = 0; i < links.length; i += 1) {
+    const navLink = document.createElement('a');
+    navLink.classList.add('nav-link');
+    navLink.id = links[i].name.toLowerCase();
+    if (links[i].active) navLink.classList.add('active');
+    navLink.attributes.href = links[i].href;
+    navLink.textContent = links[i].name;
 
-        const nav_link = document.createElement('a');
-        nav_link.classList.add('nav-link');
-        nav_link.id = links[i].name.toLowerCase();
-        if (links[i].active) nav_link.classList.add('active');
-        nav_link.attributes.href = links[i].href;
-        nav_link.textContent = links[i].name;
+    navbarNav.appendChild(navLink);
+  }
 
-        navbar_nav.appendChild(nav_link);
-    };
+  collapse.appendChild(navbarNav);
+  containerFluid.appendChild(collapse);
+  nav.appendChild(containerFluid);
 
-    collapse.appendChild(navbar_nav);
-    container_fluid.appendChild(collapse);
-    nav.appendChild(container_fluid);
-
-    return nav;
+  return nav;
 }
-
-export { header };
