@@ -1,0 +1,42 @@
+{
+    "name": "restaurant",
+    "version": "1.0.0",
+    "description": "understanding the benefits of modularized code\u001b[D\u001b[D\u001b[D\u001b[D\u001b[",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack --mode development",
+        "build": "webpack --mode production",
+        "start": "webpack serve --mode development --open",
+        "watch": "webpack --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ybadmus/Restaurant-Page-Webpack.git"
+    },
+    "keywords": [
+        "webpack"
+    ],
+    "author": "ybadmus",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ybadmus/Restaurant-Page-Webpack/issues"
+    },
+    "homepage": "https://github.com/ybadmus/Restaurant-Page-Webpack#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "css-loader": "^5.2.4",
+        "eslint": "^7.26.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.23.2",
+        "hint": "^6.1.3",
+        "style-loader": "^2.0.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^21.0.0",
+        "stylelint-csstree-validator": "^1.9.0",
+        "stylelint-scss": "^3.19.0",
+        "webpack": "^5.37.0",
+        "webpack-cli": "^4.7.0",
+        "webpack-dev-server": "^3.11.2"
+    },
+    "dependencies": {}
+}

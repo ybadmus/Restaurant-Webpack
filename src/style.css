@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+.content {
+  font: normal 16px/20px 'Lobster Two', cursive;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.app {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background: #000;
+  color: floralwhite;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.footer li {
+  display: flex;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.card-horizontal img {
+  width: 300px;
+}
+
+.list-group {
+  width: 300px;
+  text-align: center;
+}
+
+.about {
+  margin-top: 2rem;
+  padding: 30px;
+  border: 1px solid silver;
+}
+
+.row {
+  width: 100%;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #020b1a;
+  border-color: #0e1117;
+}
+
+.nav-link {
+  cursor: pointer;
+}
