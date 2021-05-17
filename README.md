@@ -1,8 +1,8 @@
 # Restaurant-Page-Webpack
 This project comes after the introduction of the ES6 class keyword, ES6 modules, and webpack. The main goal of the project is to demonstrate understanding of the benefits of modularized code as well as the ability to set up a JavaScript application made of different modules using Webpack.
 
-![screenshot](https://raw.githubusercontent.com/ybadmus/Restaurant-Webpack/styling/app_screenshot (1).PNG)
-![screenshot](https://raw.githubusercontent.com/ybadmus/Restaurant-Webpack/styling/app_screenshot (2).PNG)
+![screenshot](https://raw.githubusercontent.com/ybadmus/Restaurant-Webpack/styling/app_screenshot (1).png)
+![screenshot](https://raw.githubusercontent.com/ybadmus/Restaurant-Webpack/styling/app_screenshot (2).png)
 
 ## Built With
 
