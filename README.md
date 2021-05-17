@@ -12,7 +12,7 @@ This project comes after the introduction of the ES6 class keyword, ES6 modules,
 
 ## Live Demo
 
- [Live demo link](https://www.ybadmus.me/Restaurant-Webpack/)
+ [Live demo link](http://www.ybadmus.me/Library/)
 
 ## Getting Started
 
